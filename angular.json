@@ -3,5 +3,50 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "orch-daterangepicker": {
+      "projectType": "library",
+      "root": "projects/orch-daterangepicker",
+      "sourceRoot": "projects/orch-daterangepicker/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+          "tsConfig": "projects/orch-daterangepicker/tsconfig.lib.json",
+          "project": "projects/orch-daterangepicker/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/orch-daterangepicker/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/orch-daterangepicker/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/orch-daterangepicker/src/test.ts",
+            "tsConfig": "projects/orch-daterangepicker/tsconfig.spec.json",
+            "karmaConfig": "projects/orch-daterangepicker/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/orch-daterangepicker/tsconfig.lib.json",
+              "projects/orch-daterangepicker/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "orch-daterangepicker"
 }

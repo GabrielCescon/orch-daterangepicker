@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "orch-daterangepicker": [
+        "dist/orch-daterangepicker/orch-daterangepicker",
+        "dist/orch-daterangepicker"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
