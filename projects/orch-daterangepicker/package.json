@@ -3,12 +3,12 @@
   "version": "3.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evansmwendwa/orch-daterangepicker"
+    "url": "git+https://github.com/GabrielCescon/orch-daterangepicker"
   },
   "bugs": {
-    "url": "https://github.com/evansmwendwa/orch-daterangepicker/issues"
+    "url": "https://github.com/GabrielCescon/orch-daterangepicker/issues"
   },
-  "homepage": "https://github.com/evansmwendwa/orch-daterangepicker#readme",
+  "homepage": "https://github.com/GabrielCescon/orch-daterangepicker#readme",
   "license": "MIT",
   "dependencies": {
     "daterangepicker": "^3.0.5"
